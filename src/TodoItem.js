@@ -1,5 +1,4 @@
-import react from "react";
-
+import React from "react";
 function TodoItem(props){
     return(
         <li>
