@@ -35,7 +35,23 @@ function App() {
             const searchText = searchValue.toLowerCase();
         return todoText.includes(searchText);
         });
-    }
+    };
+    // Logica para cambiar las tareas a completado
+    const completeTodo = (text) => {
+        const todoIndex = todos.findIndex(todo => todo.text === text);
+        const newTodos = [...todos];
+        newTodos[todoIndex].completed = true;
+        setTodos(newTodos);
+    };
+
+    // Logica para eliminar tareas de la lista 
+    const deleteTodo = (text) => {
+        const todoIndex = todos.findIndex(todo => todo.text === text);
+        const newTodos = [...todos];
+        newTodos.splice(todoIndex, 1);
+        setTodos(newTodos);
+    };
+
     return (
     <>
         {/* Pasamos el estado a nuestro componente */}
@@ -50,11 +66,13 @@ function App() {
         <TodoList>
         {/* Regresamos solamente los TODOs buscados */}
         {searchedTodos.map(todo => (
-            <TodoItem
-                key={todo.text}
-                text={todo.text}
-                completed={todo.completed}
-            />
+        <TodoItem
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}
+            onComplete={() => completeTodo(todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
+        />
         ))}
         </TodoList>
         <CreateTodoButtom />      
