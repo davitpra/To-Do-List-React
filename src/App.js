@@ -36,11 +36,11 @@ function App() {
         return todoText.includes(searchText);
         });
     };
-    // Logica para cambiar las tareas a completado
-    const completeTodo = (text) => {
+    // Logica para cambiar las tareas a completado o descompletado
+    const toggleCompleteTodo = (text) => {
         const todoIndex = todos.findIndex(todo => todo.text === text);
         const newTodos = [...todos];
-        newTodos[todoIndex].completed = true;
+        newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
         setTodos(newTodos);
     };
 
@@ -70,7 +70,7 @@ function App() {
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
+            onComplete={() => toggleCompleteTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
         />
         ))}
