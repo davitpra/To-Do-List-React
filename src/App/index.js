@@ -15,6 +15,7 @@ function App() {
         parsedTodos = JSON.parse(localStorageTodos);
     }
 
+
     // Guardamos nuestros TODOs del localStorage en nuestro estado
     const [todos, setTodos] = React.useState(parsedTodos);
     // Cantidad de TODOs completados
@@ -36,12 +37,24 @@ function App() {
         return todoText.includes(searchText);
         });
     };
+
+    // Creamos la función en la que actualizaremos nuestro localStorage
+    const saveTodos = (newTodos) => {
+    // Convertimos a string nuestros TODOs
+    const stringifiedTodos = JSON.stringify(newTodos);
+    // Los guardamos en el localStorage
+    localStorage.setItem('TODOS_V1', stringifiedTodos);
+    // Actualizamos nuestro estado
+    setTodos(newTodos);
+    };
+
     // Logica para cambiar las tareas a completado o descompletado
     const toggleCompleteTodo = (text) => {
         const todoIndex = todos.findIndex(todo => todo.text === text);
         const newTodos = [...todos];
         newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
-        setTodos(newTodos);
+        // Cada que el usuario interactúe con nuestra aplicación se guardarán los TODOs con nuestra nueva función
+        saveTodos(newTodos);
     };
 
     // Logica para eliminar tareas de la lista 
@@ -49,7 +62,8 @@ function App() {
         const todoIndex = todos.findIndex(todo => todo.text === text);
         const newTodos = [...todos];
         newTodos.splice(todoIndex, 1);
-        setTodos(newTodos);
+        // Cada que el usuario interactúe con nuestra aplicación se guardarán los TODOs con nuestra nueva función
+        saveTodos(newTodos);
     };
 
     return (
