@@ -1,6 +1,6 @@
 import React from 'react';
 // Necesitamos ReactDOM para renderizar nuestro modal en el DOM
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './Modal.css';
 
 function Modal({ children }) {
