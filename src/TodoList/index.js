@@ -1,9 +1,8 @@
 import React from "react";
 import './TodoList.css'
 
-function TodoList(props){
-    
-    return(
+function TodoList (props) {
+        return (
         <section className="TodoList-container">
             {props.error && props.onError ()}
             {props.loading && props. onLoading ()}
