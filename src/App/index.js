@@ -13,24 +13,27 @@ import { CreateTodoButton } from '../CreateTodoButton/index';
 import { Modal } from '../Modal'
 import {ChangeAlert} from '../ChangeAlert'
 
-
-
 function App() {
+    const { state, stateUpdaters } = useTodo();
+
     const {
         error,
         loading,
         searchedTodos,
-        toggleCompleteTodo,
-        deleteTodo,
-        openModal,
-        setOpenModal,
-        totalTodos, 
+        totalTodos,
         completedTodos,
-        searchValue, 
-        setSearchValue,
+        openModal,
+        searchValue,
+    } = state;
+    
+    const {
+        setOpenModal,
         addTodo,
+        completeTodo,
+        deleteTodo,
+        setSearchValue,
         sincronizeTodos,
-    } = useTodo ()
+    } = stateUpdaters;
 
     return (
     <>

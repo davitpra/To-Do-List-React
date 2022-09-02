@@ -64,22 +64,25 @@ function useTodo () {
         saveTodos(newTodos);
     };
 
-
-
-    return {
-            loading,
-            error,
-            totalTodos,
-            completedTodos,
-            searchValue,
-            setSearchValue,
-            searchedTodos,
-            addTodo,
-            toggleCompleteTodo,
-            deleteTodo,
-            openModal,
-            setOpenModal,
-            sincronizeTodos,
-        }
+    const state = {
+        loading,
+        error,
+        totalTodos,
+        completedTodos,
+        searchValue,
+        searchedTodos,
+        openModal,
+    };
+    
+    const stateUpdaters = {
+        setSearchValue,
+        addTodo,
+        toggleCompleteTodo,
+        deleteTodo,
+        setOpenModal,
+        sincronizeTodos,
+    };
+    
+    return { state, stateUpdaters };
 }
 export {useTodo};
