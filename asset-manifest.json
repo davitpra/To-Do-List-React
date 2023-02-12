@@ -1,15 +1,15 @@
 {
-  "main.css": "/To-Do-List-React/static/css/main.9b1444f5.chunk.css",
-  "main.js": "/To-Do-List-React/static/js/main.f534ea82.chunk.js",
-  "main.js.map": "/To-Do-List-React/static/js/main.f534ea82.chunk.js.map",
-  "runtime~main.js": "/To-Do-List-React/static/js/runtime~main.19293773.js",
-  "runtime~main.js.map": "/To-Do-List-React/static/js/runtime~main.19293773.js.map",
-  "static/js/2.5d4ea564.chunk.js": "/To-Do-List-React/static/js/2.5d4ea564.chunk.js",
-  "static/js/2.5d4ea564.chunk.js.map": "/To-Do-List-React/static/js/2.5d4ea564.chunk.js.map",
-  "index.html": "/To-Do-List-React/index.html",
-  "precache-manifest.71b1eaee7d555f8c500815e8934d1665.js": "/To-Do-List-React/precache-manifest.71b1eaee7d555f8c500815e8934d1665.js",
-  "service-worker.js": "/To-Do-List-React/service-worker.js",
-  "static/css/main.9b1444f5.chunk.css.map": "/To-Do-List-React/static/css/main.9b1444f5.chunk.css.map",
+  "main.css": "/To-Do-List-React/static/css/main.1bc32021.chunk.css",
+  "main.js": "/To-Do-List-React/static/js/main.fd813e9a.chunk.js",
+  "main.js.map": "/To-Do-List-React/static/js/main.fd813e9a.chunk.js.map",
+  "static/js/1.c846b691.chunk.js": "/To-Do-List-React/static/js/1.c846b691.chunk.js",
+  "static/js/1.c846b691.chunk.js.map": "/To-Do-List-React/static/js/1.c846b691.chunk.js.map",
+  "runtime~main.js": "/To-Do-List-React/static/js/runtime~main.652bf0d4.js",
+  "runtime~main.js.map": "/To-Do-List-React/static/js/runtime~main.652bf0d4.js.map",
   "static/media/check.a6ff2ce6.svg": "/To-Do-List-React/static/media/check.a6ff2ce6.svg",
-  "static/media/delete.45d0d71a.svg": "/To-Do-List-React/static/media/delete.45d0d71a.svg"
+  "static/media/delete.45d0d71a.svg": "/To-Do-List-React/static/media/delete.45d0d71a.svg",
+  "static/css/main.1bc32021.chunk.css.map": "/To-Do-List-React/static/css/main.1bc32021.chunk.css.map",
+  "index.html": "/To-Do-List-React/index.html",
+  "precache-manifest.1f42534f6eedeaf0be9d18403f59947b.js": "/To-Do-List-React/precache-manifest.1f42534f6eedeaf0be9d18403f59947b.js",
+  "service-worker.js": "/To-Do-List-React/service-worker.js"
 }
