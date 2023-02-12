@@ -1,13 +1,13 @@
-import React from 'react';
-import { TodoIcon } from './';
+import React from 'react'
+import { TodoIcon } from './'
 
-function DeleteIcon({ onDelete }) {
-    return (
+function DeleteIcon ({ onDelete }) {
+  return (
     <TodoIcon
-        type="delete"
-        onClick={onDelete}
+      type='delete'
+      onClick={onDelete}
     />
-    );
+  )
 }
 
-export { DeleteIcon };
+export { DeleteIcon }

@@ -1,26 +1,26 @@
-import React from 'react';
-import './TodosLoading.css';
+import React from 'react'
+import './TodosLoading.css'
 
-function TodosLoading() {
-    return (
+function TodosLoading () {
+  return (
     <>
-    <div className="LoadingTodo-container">
-        <span className="LoadingTodo-completeIcon"></span>
-        <p className="LoadingTodo-text">Cargando TODOs...</p>
-        <span className="LoadingTodo-deleteIcon"></span>
-    </div>
-        <div className="LoadingTodo-container">
-        <span className="LoadingTodo-completeIcon"></span>
-        <p className="LoadingTodo-text">Cargando TODOs...</p>
-        <span className="LoadingTodo-deleteIcon"></span>
-    </div>
-        <div className="LoadingTodo-container">
-        <span className="LoadingTodo-completeIcon"></span>
-        <p className="LoadingTodo-text">Cargando TODOs...</p>
-        <span className="LoadingTodo-deleteIcon"></span>
-    </div>
+      <div className='LoadingTodo-container'>
+        <span className='LoadingTodo-completeIcon' />
+        <p className='LoadingTodo-text'>Cargando TODOs...</p>
+        <span className='LoadingTodo-deleteIcon' />
+      </div>
+      <div className='LoadingTodo-container'>
+        <span className='LoadingTodo-completeIcon' />
+        <p className='LoadingTodo-text'>Cargando TODOs...</p>
+        <span className='LoadingTodo-deleteIcon' />
+      </div>
+      <div className='LoadingTodo-container'>
+        <span className='LoadingTodo-completeIcon' />
+        <p className='LoadingTodo-text'>Cargando TODOs...</p>
+        <span className='LoadingTodo-deleteIcon' />
+      </div>
     </>
-    );
+  )
 }
 
-export { TodosLoading };
+export { TodosLoading }
